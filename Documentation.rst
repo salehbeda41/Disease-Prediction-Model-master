@@ -100,7 +100,7 @@ Contact
 -------
 For any issues or contributions, please contact:
 - *Email*: [salehbeda41@gmail.com]
-- *GitHub*: [Insert GitHub link]
+- *GitHub*: [https://github.com/salehbeda41]
 
 License
 -------
