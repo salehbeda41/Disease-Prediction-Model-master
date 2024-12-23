@@ -38,7 +38,7 @@ The project requires a dataset of cell images, categorized into infected and uni
 ## Usage
 1. Clone the repository:
    ```bash
-   git clone <https://github.com/salehbeda41/Disease-Prediction-Model-master.git>
+   git clone https://github.com/salehbeda41/Disease-Prediction-Model-master.git
    cd Disease-Prediction-Model-master
    ```
 
@@ -86,7 +86,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Acknowledgements
 - Keras for providing an easy-to-use deep learning API
-- [Kaggle.com] for the malaria cell images dataset
+- [Kaggle] for the malaria cell images dataset
 
 ---
-Add or replace placeholders (e.g., `<https://github.com/salehbeda41/Disease-Prediction-Model-master.git>`, dataset source) with specific information.
+Add or replace placeholders (e.g., `https://github.com/salehbeda41/Disease-Prediction-Model-master.git`, dataset source) with specific information.
