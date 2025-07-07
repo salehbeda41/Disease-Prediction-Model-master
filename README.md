@@ -19,6 +19,38 @@ To run this project, ensure you have the following dependencies installed:
 pip install tensorflow keras matplotlib numpy
 ```
 
+# 🐳 Running the Malaria Detection Project with Docker
+
+This section explains how to containerize and run the Malaria Detection project using Docker. Docker ensures a consistent environment across machines and simplifies deployment.
+
+---
+
+## 📦 Step 1: Create a `Dockerfile`
+
+Create a file named `Dockerfile` in the root of your project:
+
+```Dockerfile
+# Use official Python image
+FROM python:3.10
+
+# Set working directory
+WORKDIR /app
+
+# Copy project files
+COPY . /app
+
+# Install dependencies
+RUN pip install --upgrade pip
+RUN pip install tensorflow keras matplotlib numpy scikit-learn
+
+# Expose port (optional, if using a web interface)
+EXPOSE 5000
+
+# Run the main script
+CMD ["python", "malaria_detection.py"]
+
+```
+
 ## Dataset
 The project requires a dataset of cell images, categorized into infected and uninfected classes. Ensure the dataset is organized as follows:
 
