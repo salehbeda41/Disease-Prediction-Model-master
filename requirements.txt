@@ -7,3 +7,33 @@ matplotlib==3.7.1
 seaborn==0.12.2
 opencv-python==4.7.0.72
 jupyter==1.0.0
+
+# 🐳 Running the Malaria Detection Project with Docker
+
+This section explains how to containerize and run the Malaria Detection project using Docker. Docker ensures a consistent environment across machines and simplifies deployment.
+
+---
+
+## 📦 Step 1: Create a `Dockerfile`
+
+Create a file named `Dockerfile` in the root of your project:
+
+```Dockerfile
+# Use official Python image
+FROM python:3.10
+
+# Set working directory
+WORKDIR /app
+
+# Copy project files
+COPY . /app
+
+# Install dependencies
+RUN pip install --upgrade pip
+RUN pip install tensorflow keras matplotlib numpy scikit-learn
+
+# Expose port (optional, if using a web interface)
+EXPOSE 5000
+
+# Run the main script
+CMD ["python", "malaria_detection.py"]
